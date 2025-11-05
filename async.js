@@ -9,6 +9,9 @@ const newArr = arr.map((s) => {
 })
 // console.log(x)
 
+// MA ESISTE UNA TIPOLOGIA DI OPERAZIONI CHE NECESSITANO DI TEMPO
+// PER ESSERE COMPLETATE, ad es. setTimeout
+
 setTimeout(() => {
   console.log('1')
 }, 3000)
@@ -31,7 +34,7 @@ const chiamataAsincrona = function (f) {
   console.log('ORA COMINCIO A RECUPERARE I DATI DA AMAZON')
   setTimeout(() => {
     console.log('DATI DA AMAZON RECUPERATI!')
-    f()
+    f() // <-- così posso controllare il flusso di operazioni
   }, 2000)
 }
 
